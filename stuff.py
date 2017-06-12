@@ -14,3 +14,14 @@ def encrypt(user_input):
 
 
     return encrypted
+
+
+def decrypt(ui):
+
+    x = 0
+    uo = ""
+    while x < len(ui):
+        char = chr(ord(ui[x])-3)
+        uo = uo + char
+        x += 1
+    return(uo)
